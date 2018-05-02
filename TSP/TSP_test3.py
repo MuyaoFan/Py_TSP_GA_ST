@@ -4,7 +4,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 def main():
 
-    orderListArray=np.load('neworderlistarry.npy')
+    orderListArray=np.load('neworderlist3arry.npy')
     print(orderListArray.shape)
     edgeListArray=OrdertoEdge(orderListArray)
     #print(edgeListArray)
@@ -33,8 +33,8 @@ def main():
     print(frequencePointArray)
     # print(list(frequencePointArray['frequence']))
     # print(cl.Counter(frequencePointArray['frequence']))
-    #fPA=cl.Counter(frequencePointArray['frequence'])
-    #Frequenceplot(fPA)
+    fPA=cl.Counter(frequencePointArray['frequence'])
+    Frequenceplot(fPA)
     PlotOfEdge(frequencePointArray)
     return
 def PlotOfEdge(frequencePA):
